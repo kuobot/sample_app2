@@ -1,4 +1,10 @@
 <% provide(:title, 'Help') %>
 
-		<%= @user.phone %><br>
-		<%= mail_to @user.email, "Get in touch!", :subject => "Hey!" %>
+		
+<!-- 		<%= @user.phone %><br>
+
+ -->
+ 	<div class="flat-cancel-button">
+ 		<%= mail_to @user.email, "Contact me", :subject => "Hey!" %>
+
+ 	</div>

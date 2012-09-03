@@ -8,7 +8,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-
+ 
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :description, :phone
   has_secure_password
@@ -20,6 +20,10 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
 
+  searchable do
+    text :email, :name
+    string :email, :name
+  end
 
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token

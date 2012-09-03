@@ -1,4 +1,4 @@
-http://shielded-temple-8057.herokuapp.com/
+http://hidden-ocean-3981.herokuapp.com/
 
 # Ruby on Rails Tutorial: sample application
 

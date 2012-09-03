@@ -5,8 +5,21 @@ class UsersController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+
+    @search = User.search do
+    fulltext params[:search]
   end
+    @users = @search.results
+  #   @users = User.paginate(page: params[:page])
+  end
+
+
+def search
+  @search = User.search() do
+  keywords(params[:search])
+  end
+end
+
 
   def show
   	@user = User.find(params[:id])
