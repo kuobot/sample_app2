@@ -9,27 +9,36 @@
         <%= @user.name %>
       </h1>
     </section>
-<!--     <section>
+
+     <section>
       <%= render 'shared/stats' %>
     </section>
- -->
+ 
       <%= render 'phone' %>
 
       <%= render 'test' %>
+      <br>
+      <br>
+      <br>
+      <br>
+
+          <%= render 'follow_form' if signed_in? %>
+
 </div>
+
 
   </aside>
 
 
   <div class="span8">
-    <%= render 'follow_form' if signed_in? %>
-    <% if @user.microposts.any? %>
-<!--        <h3>Projects (<%= @user.microposts.count %>)</h3>
- -->       <ol class="microposts">
+  <!--   <%= render 'follow_form' if signed_in? %>
+   <% if @user.microposts.any? %>
+        <h3>Projects (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
         <%= render @microposts %>
       </ol>
       <%= will_paginate @microposts %>
     <% end %>
-  </div> 
- </div>
+  --></div> 
+  </div>
 

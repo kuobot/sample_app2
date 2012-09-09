@@ -6,4 +6,7 @@ class Relationship < ActiveRecord::Base
 
   validates :follower_id, presence: true
   validates :followed_id, presence: true
+
+    default_scope order: 'relationships.created_at DESC'
+
 end
