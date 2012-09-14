@@ -2,20 +2,20 @@
 
 <div class="row"> 
   <aside class="span3"><div class="rectangle">
-
+<center>
     <section>
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
     </section>
-
-     <section>
-      <%= render 'shared/stats' %>
-    </section>
+  
+       <%= render 'shared/stats' %>
  
-      <%= render 'phone' %>
-
+ <section>
+     <%= render 'phone' %>
+    </section>
+</center>
       <%= render 'test' %>
       <br>
       <br>
