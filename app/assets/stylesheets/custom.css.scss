@@ -143,14 +143,47 @@ footer ul li {
    a:link {text-decoration: none}
 }
 
+ .flat-button {
+   width: 192px;
+   border-radius: 20px;
+   color: rgb(255, 255, 255);
+   font-family:'Helvetica Neue';
+   font-size: 12pt;
+   font-weight: normal;
+   text-decoration: none;
+   display: table;
+   background-color: rgb(79, 196, 20);
+   float: none;
+   border: none;
+   outline: none;
+      a:link {color: #FFF; text-decoration: none}
+    padding: 4px;
+
+ }
+ .flat-button .editable-element {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: left;
+   outline: none;
+   text-shadow: none;
+   padding: 0px;
+ }
+
+ .small-rectangle {
+  background: #EEE;
+  border: none;
+  width: 180px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
 
 .rectangle {
   background: #f5f5f5;
   border: none;
   width: 200px;
   border-radius: 10px;
-      padding: 10px;
-
+  padding: 10px;
 
 }
 
@@ -232,6 +265,27 @@ input, textarea, select, .uneditable-input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+ }
+
+ .textarea {
+   width: 202px;
+   height: 120px;
+   padding: 5px 8px;
+   font-size: 12pt;
+   font-family:'Helvetica Neue';
+   color: #CCC;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid rgb(207, 207, 207);
+   border-radius: 3px;
+   -moz-box-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 8px 0px inset;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 8px 0px inset;
+   -o-box-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 8px 0px inset;
+   box-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 8px 0px inset;
+   text-shadow: none;
+   font-weight: normal;
+   float: none;
+   font-style: normal;
+   text-align: left;
  }
 
  /* users index */

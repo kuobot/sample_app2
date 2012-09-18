@@ -2,27 +2,23 @@
 
 <div class="row"> 
   <aside class="span3"><div class="rectangle">
-<center>
     <section>
-      <h1>
-        <%= gravatar_for @user %>
+      <h1><center>
+        <%= gravatar_for @user %><br>
         <%= @user.name %>
-      </h1>
+      </h1></center>
     </section>
-  
-       <%= render 'shared/stats' %>
- 
+    <section><center>
+       <%= render 'shared/stats' %></section></center>
  <section>
      <%= render 'phone' %>
     </section>
-</center>
-      <%= render 'test' %>
       <br>
       <br>
       <br>
       <br>
-
           <%= render 'follow_form' if signed_in? %>
+        <textarea class="textarea">textarea</textarea>
 
 </div>
 

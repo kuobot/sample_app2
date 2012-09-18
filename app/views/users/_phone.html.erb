@@ -1,9 +1,17 @@
 <% provide(:title, 'Help') %>
 
 
- 	<div class="flat-cancel-button">
- 		<%= mail_to @user.email, "Contact me", :subject => "Hey!" %>
+<div class="flat-button">
+		<%= image_tag("drumstick.png") %><span class="editable-element"><b>	
+<%= mail_to @user.email, "Contact me", :subject => "Hey!" %></b></span></a>
+ 	</div>
+<br>
+<div class="flat-button">
+	 		  <%= image_tag("pacman.png") %><span class="editable-element"><b>
+	 	 <%= @user.phone %>
  	</div>
 <br>
 
-	 	 <h4><%= @user.phone %></h4><br>
+<div class="small-rectangle"><b>
+	<%= @user.description %>
+ 	</div>
