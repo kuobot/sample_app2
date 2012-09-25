@@ -1,17 +1,17 @@
 <% provide(:title, 'Help') %>
 
 
-<div class="flat-button">
-		<%= image_tag("drumstick.png") %><span class="editable-element"><b>	
-<%= mail_to @user.email, "write us", :subject => "Hey!" %></b></span></a>
+<%= mail_to @user.email, image_tag("drumstick.png"), :subject => "Hey!" %></b></a>
  	</div>
-<br>
+<br><!-- 
 <div class="flat-button">
 	 		  <%= image_tag("pacman.png") %><span class="editable-element"><b>talk to us
-	 	<!--  <%= @user.phone %> -->
- 	</div>
+	 	 <%= @user.phone %> 
+ 	</div> -->
 <br>
 
-<div class="small-rectangle"><b>
+
+<!-- <div class="small-rectangle"><b>
 	<%= @user.description %>
  	</div>
+ -->

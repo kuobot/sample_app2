@@ -15,25 +15,28 @@
       </h1></center>
     </section>
     <center>
-       <%= render 'shared/stats' %></section></center>
+       <%= render 'shared/stats' %></section></center><center>
+               <textarea class="textarea">write a note!</textarea>
+  </center>
  <center>
+
      <%= render 'phone' %></center>
-    
-        <textarea class="textarea">textarea</textarea>
+
+          <%= render 'follow_form' if signed_in? %>
     </div>
     </aside>
   </div>
-    <%= render 'follow_form' if signed_in? %>
   <div id="content">
-    <div class="span6">
+  <!--   <div class="span6">
       <% if @user.microposts.any? %>
-<!--          <h3>Projects (<%= @user.microposts.count %>)</h3>
- -->        <ol class="microposts">
+          <h3>Projects (<%= @user.microposts.count %>)</h3>
+         <ol class="microposts">
         <%= render @microposts %>
         </ol>
         <%= will_paginate @microposts %>
       <% end %>
     </div>
-  </div> 
+   --></div> 
+
 </div>
 
