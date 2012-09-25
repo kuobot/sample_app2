@@ -10,7 +10,8 @@ class UsersController < ApplicationController
       @search = User.search do
         fulltext params[:search]
       end
-      @users = @search.results
+      # @users = @search.results
+      @users = User.all.group_by{|u| u.name[0]}
     else
       @users = User.paginate(page: params[:page])
     end

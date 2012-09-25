@@ -1,39 +1,39 @@
 <% provide(:title, @user.name) %>
 
-<div class="row"> 
-  <aside class="span3"><div class="rectangle">
+<div class="container">
+  <div id="sidenav">
+    <aside class="span4">
+    <div class="rectangle">
     <section>
       <h1><center>
-        <%= gravatar_for @user %><br>
+        <%= gravatar_for @user %>
+      </h1></center>
+    </section>
+     <section>
+      <h1><center>
         <%= @user.name %>
       </h1></center>
     </section>
-    <section><center>
+    <center>
        <%= render 'shared/stats' %></section></center>
- <section>
-     <%= render 'phone' %>
-    </section>
-      <br>
-      <br>
-      <br>
-      <br>
-          <%= render 'follow_form' if signed_in? %>
+ <center>
+     <%= render 'phone' %></center>
+    
         <textarea class="textarea">textarea</textarea>
-</div>
-  </aside>
-
-
-  <div class="span8">
-    <%= render 'follow_form' if signed_in? %>
-   <% if @user.microposts.any? %>
-        <h3>Projects (<%= @user.microposts.count %>)</h3>
-      <ol class="microposts">
-        <%= render @microposts %>
-      </ol>
-      <%= will_paginate @microposts %>
-    <% end %>
-  </div> 
-
-
+    </div>
+    </aside>
   </div>
+    <%= render 'follow_form' if signed_in? %>
+  <div id="content">
+    <div class="span6">
+      <% if @user.microposts.any? %>
+<!--          <h3>Projects (<%= @user.microposts.count %>)</h3>
+ -->        <ol class="microposts">
+        <%= render @microposts %>
+        </ol>
+        <%= will_paginate @microposts %>
+      <% end %>
+    </div>
+  </div> 
+</div>
 
