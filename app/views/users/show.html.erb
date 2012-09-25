@@ -19,15 +19,12 @@
       <br>
           <%= render 'follow_form' if signed_in? %>
         <textarea class="textarea">textarea</textarea>
-fkds
 </div>
-
-
   </aside>
 
 
   <div class="span8">
-  <!--   <%= render 'follow_form' if signed_in? %>
+    <%= render 'follow_form' if signed_in? %>
    <% if @user.microposts.any? %>
         <h3>Projects (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
@@ -35,6 +32,8 @@ fkds
       </ol>
       <%= will_paginate @microposts %>
     <% end %>
-  --></div> 
+  </div> 
+
+
   </div>
 

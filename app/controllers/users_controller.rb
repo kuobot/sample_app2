@@ -6,19 +6,22 @@ class UsersController < ApplicationController
 
   def index
 
-    @search = User.search do
-    fulltext params[:search]
-  end
-    @users = @search.results
-  #   @users = User.paginate(page: params[:page])
+    if params[:search]
+      @search = User.search do
+        fulltext params[:search]
+      end
+      @users = @search.results
+    else
+      @users = User.paginate(page: params[:page])
+    end
   end
 
 
-def search
-  @search = User.search() do
-  keywords(params[:search])
+  def search
+    @search = User.search() do
+    keywords(params[:search])
+    end
   end
-end
 
 
   def show
