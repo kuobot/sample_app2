@@ -10,12 +10,13 @@ gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem "jquery-mobile-rails"
 
+
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'
   gem 'factory_girl_rails', '1.4.0'
-  
+
 end
 
 

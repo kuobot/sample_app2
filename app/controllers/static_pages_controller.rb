@@ -15,5 +15,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def feed
+  end
   
 end

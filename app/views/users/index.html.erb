@@ -1,9 +1,9 @@
 <% provide(:title, 'All users') %>
 
-
 <!--  <form class="navbar-search pull-right">
   <input type="text" class="search-query" placeholder="Search">
- -->  <%= form_tag users_path, :method => :get do %>
+ --> 
+  <%= form_tag users_path, :method => :get do %>
   
     <%= text_field_tag :search, params[:search] %>
   <!--   <%= submit_tag "Search", :name => nil %>
@@ -15,10 +15,10 @@
 
 <!--   <h1>All users</h1>
 
-<%= will_paginate %>
+<% will_paginate %>
 
 <ul class="users">
   <%= render @users %>
 </ul>
 
-<%= will_paginate %> -->
+<% will_paginate %> 

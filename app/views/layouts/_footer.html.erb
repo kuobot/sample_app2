@@ -1,17 +1,25 @@
+<% if signed_in? %>
+
 <footer class="footer">
     <div class="container">
 		<small>
-			<a href="http://rubyonrailstutorial.org">Kitten Inc.</a>by Meow Industries
+			<a href="http://rubyonrailstutorial.org">Kitten Inc. </a>by Meow Industries
 		</small>
+		<nav><!-- 
+        <ul class="nav pull-right"> -->
+        	<ul class="nav center">
+            <%= link_to "Search", users_path %></li>
+			<%= link_to "About", about_path %></li>
+			<%= link_to "Contact", contact_path %></li>
 
-		<nav>
-        <ul class="nav pull-right">
-			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Contact", contact_path %></li>
-			<li><a href="http://news.railstutorial.org/">News</a></li>
+
 		</ul>
 		</nav>
 	</div>
 </footer>
 
 
+<% else %>
+
+
+<% end %> 
