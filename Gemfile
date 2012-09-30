@@ -9,6 +9,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem "jquery-mobile-rails"
+gem 'thin'
 
 
 group :development, :test do
