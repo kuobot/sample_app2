@@ -25,10 +25,10 @@ SampleApp::Application.configure do
   config.force_ssl = true
 
   config.action_mailer.smtp_settings = {
-    :port           => Environment.mailgun_smtp_port, 
-    :address        => Environment.mailgun_smtp_server,
-    :user_name      => Environment.mailgun_smtp_login,
-    :password       => Environment.mailgun_smtp_password,
+    :port           => ENV['MAILGUN_SMTP_PORT'], 
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain         => 'dry-lake-2266.herokuapp.com',
     :authentication => :plain,
   }
