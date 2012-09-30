@@ -37,6 +37,8 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to the Sample App!"
+      # Tell the UserMailer to send a welcome Email after save
+      UserMailer.welcome_email(@user).deliver
       redirect_to @user
     else
       render 'new'

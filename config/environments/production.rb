@@ -24,6 +24,16 @@ SampleApp::Application.configure do
   # and use secure cookies.
   config.force_ssl = true
 
+  config.action_mailer.smtp_settings = {
+    :port           => Environment.mailgun_smtp_port, 
+    :address        => Environment.mailgun_smtp_server,
+    :user_name      => Environment.mailgun_smtp_login,
+    :password       => Environment.mailgun_smtp_password,
+    :domain         => 'dry-lake-2266.herokuapp.com',
+    :authentication => :plain,
+  }
+  config.action_mailer.delivery_method = :smtp
+
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
