@@ -8,6 +8,8 @@ class RelationshipsController < ApplicationController
       format.html { redirect_to @user }
       format.js
     end
+      # Tell the UserMailer to send a notification Email after collect
+      UserMailer.post_collect(@user).deliver
   end
 
   def destroy

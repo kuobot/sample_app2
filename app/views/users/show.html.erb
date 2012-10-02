@@ -26,10 +26,11 @@
     </div>
     </aside>
   </div>
-  <div class="rectangle">
 <!--   <div id="content">
     <div class="span6">
  -->      <% if @user.microposts.any? %>
+             <div class="rectangle">
+
 <!--           <h3>Projects (<%= @user.microposts.count %>)</h3>
  -->         <ol class="microposts">
         <%= render @microposts %>
