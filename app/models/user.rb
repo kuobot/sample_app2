@@ -21,8 +21,7 @@ class User < ActiveRecord::Base
   has_many :followers, through: :reverse_relationships, source: :follower
 
   searchable do
-    text :email, :name
-    string :email, :name
+    text :email, :name, :description
   end
 
 

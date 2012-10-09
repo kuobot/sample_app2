@@ -1,7 +1,12 @@
 <% provide(:title, 'Help') %>
 
 
-<%= mail_to @user.email, image_tag("drumstick.png"), :subject => "Hey!" %></b></a>
+ <div class="small-rectangle"><b>
+	<%= @user.description %>
+ 	</div>
+ <br>
+
+<%= mail_to @user.email, image_tag("drumstick.png"), :subject => "Message from your tethrball" %></b></a>
  	</div>
 <br><!-- 
 <div class="flat-button">
@@ -10,8 +15,3 @@
  	</div> -->
 <br>
 
-
-<!-- <div class="small-rectangle"><b>
-	<%= @user.description %>
- 	</div>
- -->
