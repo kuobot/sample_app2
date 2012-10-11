@@ -11,7 +11,21 @@
     </section>
      <section>
       <h1><center>
-        <%= @user.name %>
+
+      <% if @user.website? %>
+
+       <%= link_to("http://" + @user.website) do %>
+
+  <strong><%= @user.name %></strong>
+<% end %>
+
+  <% else %>
+
+  <strong><%= @user.name %></strong>
+
+<% end %>
+
+
       </h1></center>
     </section>
 <!--                 <textarea class="textarea">write a note!</textarea>

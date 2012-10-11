@@ -10,7 +10,7 @@
 #
  
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation, :description, :phone
+  attr_accessible :name, :email, :password, :password_confirmation, :description, :phone, :tags, :website
   has_secure_password
   has_many :microposts, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
@@ -21,7 +21,8 @@ class User < ActiveRecord::Base
   has_many :followers, through: :reverse_relationships, source: :follower
 
   searchable do
-    text :email, :name, :description
+    text :email, :name, :description, :tags
+    string :tags
   end
 
 

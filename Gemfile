@@ -12,7 +12,7 @@ gem 'thin'
 
 
 group :development, :test do
-  gem 'faker', '1.0.1'
+  # gem 'faker', '1.0.1'
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'

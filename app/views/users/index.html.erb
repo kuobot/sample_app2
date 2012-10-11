@@ -3,6 +3,10 @@
 <!--  <form class="navbar-search pull-right">
   <input type="text" class="search-query" placeholder="Search">
  --> 
+
+    <h1>Search:</h1>
+
+
   <%= form_tag users_path, :method => :get do %>
   
     <%= text_field_tag :search, params[:search] %>
@@ -13,12 +17,11 @@
 </form>
 
 
-<!--   <h1>All users</h1>
+   <center><h3>Other interesting people you might like to meet:</h3></center>
+   <br>
 
 <% will_paginate %>
 
 <ul class="users">
   <%= render @users %>
 </ul>
-
-<% will_paginate %> 
