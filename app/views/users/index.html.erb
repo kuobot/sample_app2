@@ -4,7 +4,7 @@
   <input type="text" class="search-query" placeholder="Search">
  --> 
 
-    <h1>Search:</h1>
+    <h1>Find a card using email address:</h1>
 
 
   <%= form_tag users_path, :method => :get do %>
@@ -17,11 +17,10 @@
 </form>
 
 
-   <center><h3>Other interesting people you might like to meet:</h3></center>
    <br>
 
 <% will_paginate %>
 
 <ul class="users">
-  <%= render @users %>
+  <%= render @users %> 
 </ul>
