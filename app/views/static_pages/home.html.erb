@@ -1,57 +1,16 @@
 <% if signed_in? %>
 
-<!--  -->
-<!-- 
-<!DOCTYPE HTML>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700"
-    media="screen" rel="stylesheet" type="text/css" />
-    <link href="bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css"
-    />
-    <link href="fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans
-    for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
--->
-  </head> -->
-  
-  <body>
 
-    <div class="container-fluid">
-      <table class="table table-striped">
-        <thead>
-          <tr class=""></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <br>
-            </td>
-            <td>
-    
-              
-              </h3>
-              <div class="row-fluid">
-                <span class="span12">
-                  <p>      <%= render 'shared/feed' %>
-</p>
-                </span>
-              </div>
-         
-        </tbody>
-      </table>
-    </div>
-    <button class="btn">Search</button>
-    <input class="textinput" type="text" placeholder="search by email">
-  </body>
+<div class="container-fluid">
 
-</html>
+<p>      <%= render 'shared/feed' %>
+</p></div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Build Your Lifeline</h1>
+<br>
 
-
-
+    <%= link_to "Start now", signup_path, 
+                                class: "btn" %>
+  </div>
 <% end %> 
