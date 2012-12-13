@@ -13,4 +13,7 @@ class Micropost < ActiveRecord::Base
     where("user_id IN (#{followed_user_ids}) OR user_id = :user_id", 
           user_id: user.id)
   end
+  def is_today
+    created_at.today?
+  end
 end

@@ -1,5 +1,4 @@
-<div class="rectangle">
-<li id="<%= feed_item.id %>">
+<li id="<%= feed_item.id %>" class="<%= feed_item.is_today ? 'today' : '' %>">
 
         <span class="timestamp">  
       Asked <%= time_ago_in_words(feed_item.created_at) %> ago:  </span><br>

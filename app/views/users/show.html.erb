@@ -1,59 +1,124 @@
 <% provide(:title, @user.name) %>
 
-<div class="container-fluid">
-<!--      <section>
-      <h1><center>
-         <%= gravatar_for @user %>
-    </h1></center>
-    </section> -->
-
-    <aside class="span4">
-     <section>
-         <%= render 'shared/user_info' %>
-   
-    </aside> 
-
-     <section>
-      <h1><center>
-
-      <% if @user.website? %>
-
-       <%= link_to("http://" + @user.website) do %>
-
-<% end %>
-
-  <% else %>
-
-  <strong><%= @user.name %></strong>
-
-<% end %>
 
 
-      </h1></center>
-    </section>
-<!--                 <textarea class="textarea">write a note!</textarea>
- -->   
- <center>
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700"
+    media="screen" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css"
+    />
+    <link href="fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans
+    for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+    <title>Detail</title>
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner"> <a class="brand easel-linkable" href="#" data-link="3768ca2b2ae92b0f">omnomn</a>
 
-     <%= render 'phone' %></center>
-
-          <%= render 'follow_form' if signed_in? %>
+        <ul
+        class="nav">
+          <li data-link="9ee5676b7f634fb1" class="easel-linkable"><a href="#" class="a-1">Profile</a>
+          </li>
+          <li data-link="2d08b406ff7a7e89" class="easel-linkable"><a href="#" class="a-1">Settings</a>
+          </li>
+          <li><a href="#" class="a-2">Hi, Joann!<br></a>
+          </li>
+          <li><a href="#" class="a-3">Logout<br></a>
+          </li>
+          </ul>
+      </div>
     </div>
-    </aside>
-  </div>
-<!--   <div id="content">
-    <div class="span6">
- -->      <% if @user.microposts.any? %>
-             <div class="rectangle">
-
-<!--           <h3>Projects (<%= @user.microposts.count %>)</h3>
- -->         <ol class="microposts">
-        <%= render @microposts %>
-        </ol>
-        <%= will_paginate @microposts %>
-      <% end %>
+    <div class="container-fluid">
+      <table class="table table-striped">
+        <thead>
+          <tr class=""></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <br>
+            </td>
+            <td>
+              <br>
+            </td>
+            <td>
+              <br>
+              <div class="row-fluid">
+                <span class="span6">
+                  <div class="well">
+                    <h3 class="heading">Lululemon
+                      <br>
+                      <button class="btn">You're on this eventstream
+                        <br>
+                      </button>
+                    </h3>
+                    <p>our details 327 Grant Avenue San Francisco, CA United States 94108 our hours 415-402-0914
+                      grantavenue-store@lululemon.com Monday - Saturday: 9am - 8pm Sunday: 9am - 7pm location
+                      map Click here to view map</p>
+                  </div>
+                </span>
+                <span class="span6">
+                  <h1 class="heading heading-1">Run Club on Thursday, Dec. 12 at 6:30pm</h1>
+                  <p>Run Club Thursday December 13th, 2012 327 Grant Avenue We've got a wide range of
+                    runners that meet on Thursday nights at 6:30pm at lululemon athletica Grant Avenue
+                    . Each week we'll run different routes (3 mile, 4.5 mile, and a 6 mile option) around
+                    the city followed by a run club social at the Irish Bank for some drinks and more
+                    fun! If you're new to running, training for a race, or just looking for a fun group
+                    of people to run with, come on out and join in on all the fun!</p>
+                </span>
+              </div>
+              <div class="row-fluid">
+                <span class="span6"></span>
+                <span class="span6">
+                  <h1 class="heading heading-1">Run Club on Thursday, Dec. 19 at 6:30pm</h1>
+                  <p>Run Club Thursday December 13th, 2012 327 Grant Avenue We've got a wide range of
+                    runners that meet on Thursday nights at 6:30pm at lululemon athletica Grant Avenue
+                    . Each week we'll run different routes (3 mile, 4.5 mile, and a 6 mile option) around
+                    the city followed by a run club social at the Irish Bank for some drinks and more
+                    fun! If you're new to running, training for a race, or just looking for a fun group
+                    of people to run with, come on out and join in on all the fun!</p>
+                </span>
+              </div>
+              <div class="row-fluid">
+                <span class="span6"></span>
+                <span class="span6">
+                  <h1 class="heading heading-1">Run Club on Thursday, Dec. 24 at 6:30pm</h1>
+                  <p>Run Club Thursday December 13th, 2012 327 Grant Avenue We've got a wide range of
+                    runners that meet on Thursday nights at 6:30pm at lululemon athletica Grant Avenue
+                    . Each week we'll run different routes (3 mile, 4.5 mile, and a 6 mile option) around
+                    the city followed by a run club social at the Irish Bank for some drinks and more
+                    fun! If you're new to running, training for a race, or just looking for a fun group
+                    of people to run with, come on out and join in on all the fun!</p>
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+            </td>
+            <td>
+              <br>
+            </td>
+            <td>
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div> 
+    <button class="btn btn-1">Search</button>
+    <input class="textinput" type="text" placeholder="search by email">
+  </body>
 
-</div>
-
+</html>
