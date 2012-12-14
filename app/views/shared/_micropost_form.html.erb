@@ -1,7 +1,6 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-<!--   <div class="field">
- -->    <%= f.text_area :content, placeholder: "What do you want to ask your network?" %>
-  </div>
+    <%= f.text_area :title, placeholder: "Title of event", class: "textfield" %>
+ <br><%= f.text_area :content, placeholder: "What do you want to ask your network?", class: "textfield" %>
   <center><%= f.submit "           Post to your community's wall         ", class: "basic-cancel-button" %></center>
 <% end %>

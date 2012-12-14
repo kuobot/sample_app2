@@ -6,8 +6,9 @@
      <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %>
     </span> -->
-    <span class="content"><%= feed_item.content %></span>
-<br>
+  <div class="container-fluid"> 
+   <div class="title"><%= feed_item.title %></div><br><br><%= feed_item.content %></div>
+<br></div>
 <!--       <span class="signature"><%= link_to feed_item.user.name, feed_item.user %>.<br>     </span> 
  --> <!--      <span class="label"> <%= mail_to feed_item.user.email, "Reply", :subject => "Message from your tethrball from" + ' ' + feed_item.user.name %> -->
 
