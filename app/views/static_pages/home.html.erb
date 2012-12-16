@@ -1,15 +1,14 @@
 <% if signed_in? %>
 
-        <%= render 'shared/micropost_form' %>
-<div class="container-fluid">
-<p>      <%= render 'shared/feed' %>
-</p>
-<% else %>
-  <div class="center hero-unit">
-    <h1>Build Your Lifeline</h1>
-<br>
+  <%= render 'shared/micropost_form' %>
+      
+  <%= render 'shared/feed' %>
 
-    <%= link_to "Start now", signup_path, 
-                                class: "btn" %>
-  </div></div>
+<% else %>
+
+  <div class="center hero-unit">
+      <h1>Build Your Lifeline</h1>
+      <%= link_to "Start now", signup_path, class: "btn" %>
+  </div>
+
 <% end %> 
