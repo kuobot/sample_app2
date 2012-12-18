@@ -32,7 +32,7 @@ body {
   float:left;
   margin-left: 10px;
   font-size: 1.2em;
-  color: #FFF;
+  color: #CCC;
   font-weight: bold;
   padding-top: 2px;
   &:hover {
@@ -62,17 +62,15 @@ body {
   top: 6px;
   left: 1054px;
 }
-input.textinput {
-  width: 205.81481456756592px;
-  height: 19.777777671813965px;
-  position: absolute;
-  top: 7px;
-  left: 831px;
+.textinput {
+  margin: 10px 0 20px 250px;
+  width: 600px;
+  height: 20px;
 }
 
 .textfield {
   margin: 10px 0 20px 250px;
-  width: 400px;
+  width: 600px;
   height: 100px;
 }
 

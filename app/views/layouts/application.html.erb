@@ -15,6 +15,13 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 	<%= render 'layouts/shim' %>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+   $('.wiggle').wiggle();
+});
+</script>
+
 </head>
   <body>
     <%= render 'layouts/header' %>

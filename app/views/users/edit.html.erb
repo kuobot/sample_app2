@@ -1,20 +1,17 @@
 <% provide(:title, "Edit user") %> 
-<!-- <h1>Update your card.</h1>
- -->
 
-<div class="container">
+<div class="row-fluid">
+  <span class="span6">
 
-<div class="row">
-<!--   <div class="span6 offset3">
- -->    <%= form_for(@user) do |f| %>
+    <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
 
-      <%= f.label :name, "Your name:" %>
+      <%= f.label :name, "Group Name:" %>
       <%= f.text_field :name %>
 
-      <%= f.label :description, "Describe yourself:" %>
-      <%= f.text_field :description %>
+      <%= f.label :description, "Describe the group:" %>
+      <%= f.text_area :description %>
 
       <%= f.label :tags, "What do you love?" %>
       <%= f.text_field :tags %>
@@ -34,11 +31,11 @@
       <%= f.label :password_confirmation, "Confirm Password" %>
       <%= f.password_field :password_confirmation %>
 
+
       <%= f.submit "Save changes", class: "btn" %>
+</span>  <span class="span6"></span>
+</div>
     <% end %>
 <!-- 
     <%= gravatar_for(@user) %>
     <a href="http://gravatar.com/emails">change</a> -->
-  </div>
-</div>
-</div>
