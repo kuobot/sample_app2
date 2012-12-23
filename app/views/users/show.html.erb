@@ -8,12 +8,14 @@
       </div>
     </span>
     <span class="span9">
+            <div class="well">
       <p>      
         <% if @user.microposts.any? %>
           <%= render @microposts %>
           <%= will_paginate @microposts %>
       </p>
     </span>
+  </div>
   </div>    
 </div>
 <% end %>
