@@ -1,18 +1,17 @@
-<% provide(:title, "Sign in") %>
+<div class="container-fluid">
 
-<div class="row">
-<!--   <div class="span6 offset3">
- -->    <%= form_for(:session, url: sessions_path) do |f| %>
+<% provide(:title, "Sign in") %>
+   <%= form_for(:session, url: sessions_path) do |f| %>
 
       <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, class: "textinput" %>
 
       <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, class: "textinput" %>
 
-      <%= f.submit "Knock to enter", class: "btn" %>
+      <%= f.submit "Login", class: "btn" %>
     <% end %>
 
-    <p>New user? <%= link_to "Add yourself to the tethrsphere", signup_path %></p>
+    <p>New user? <%= link_to "Create your eventfeed now!", signup_path %></p>
   </div>
 </div>

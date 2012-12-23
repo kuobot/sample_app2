@@ -1,25 +1,23 @@
 <% provide(:title, 'Sign up') %>
 
-<div class="container">
-<!-- <div class="row">
-  <div class="span6 offset3">
- -->    <%= form_for(@user) do |f| %>
+<div class="container-fluid">
+  <div class="well">
+ <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
       <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, class: "textinput" %>
 
       <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, class: "textinput" %>
 
       <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, class: "textinput" %>
 
       <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "textinput" %>
 
-      <%= f.submit "Create my card", class: "btn" %>
+      <%= f.submit "Create my eventfeed", class: "btn" %>
     <% end %>
   </div>
-</div>
 </div>

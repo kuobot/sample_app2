@@ -1,15 +1,10 @@
-<% if signed_in? %>
-
-<div class="container-fluid">
-        <div class="well">
-  <%= render 'shared/feed' %>
-</div>
-</div>
-<% else %>
-
-  <div class="center hero-unit">
-      <h1>Build Your Lifeline</h1>
-      <%= link_to "Start now", signup_path, class: "btn" %>
+<div class="container-fluid">   
+  <div class="well">
+    <% if signed_in? %>
+      <%= render 'shared/feed' %>
+    <% else %>
+      <center><h2>Create an eventfeed.</h2><br><%= link_to "Start now", signup_path, class: "btn" %></center>
   </div>
+</div>
 
 <% end %> 

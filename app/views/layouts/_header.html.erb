@@ -6,8 +6,8 @@
 
         <ul class="nav pull-right">
 
-              <li><%= link_to "Post", help_path %></li>
           <% if signed_in? %>
+                        <li><%= link_to "Post", help_path %></li>
              <li><%= link_to "Search", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -23,7 +23,7 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Knock to enter", signin_path %></li>
+            <li><%= link_to "Login", signin_path %></li>
           <% end %>
         </ul>
 

@@ -44,8 +44,9 @@ body {
 /* body */
 
 h1 {
-  margin: 20px 0;
+  margin: 20px 30px;
 }
+
 .container-fluid {
   padding: 10px 30px 10px 30px;  
   margin: 60px 0px;
@@ -61,33 +62,29 @@ h1 {
 }
 
 .btn {
-  width: 70px;
-  height: 30px;
-  position: absolute;
-  top: 6px;
-  left: 1054px;
-}
-.textinput {
-  padding: 4px 130px 4px 5px;
-  margin: 0 0 20px;
-  height: 20px;
+  font-size: 17.77777862548828px;
+  padding: 10px 20px;
 }
 
 .textfield {
-  padding: 4px 430px 4px 5px;
+  padding: 10px 13px 10px 13px;
   margin: 0 0 20px;
   height: 100px;
+  width: 255px;
+  font-size: 15.555556297302246px;
+  border-radius: 5.981481552124023px;
 }
 
   .title {
-  margin: 10px 0;
   font-size: 2em;
   font-weight: bold;
   line-height: 1.2em;
   }
 
 input.textinput {
-  padding: 10px 300px 10px 13px;
+  margin: 10px 0;
+  padding: 10px 13px 10px 13px;
+  width: 255px;
   font-size: 15.555556297302246px;
   border-radius: 5.981481552124023px;
 }

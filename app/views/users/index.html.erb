@@ -5,21 +5,18 @@
  --> 
 
 <div class="container-fluid">
-	<div class="well"><center>
-    <h1>Find a group's eventfeed:</h1>
-
-  <%= form_tag users_path, :method => :get do %>
+	<div class="well">
+		<center>
+		<div class="title">
+    		Find a group's eventfeed:
+    	</div>
+  		<%= form_tag users_path, :method => :get do %>
+  	    <%= text_field_tag :search, params[:search], class: "textinput" %>
+     <%= submit_tag "Search", :name => nil, class: "btn" %>
   
-    <%= text_field_tag :search, params[:search], class: "textinput" %>
-  <!--   <%= submit_tag "Search", :name => nil %>
-   -->
-<ul class="users">
-  <%= render @users %> 
-</ul> -->
-
-
-</center>
-</form>
+	</center>
+  	<%= render @users %> 
+  </div>
 </div>
 <% end %>
 

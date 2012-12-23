@@ -1,38 +1,36 @@
 <% provide(:title, "Edit user") %> 
 
 <div class="container-fluid">
-  <span class="span12">
+  <span class="span6">
+    <div class="well">
 
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
 
-      <%= f.label :name, "Group Name:" %>
+      <%= f.label :name, "Group Name:", class: "title" %>
       <%= f.text_field :name, class: "textinput" %>
 
-      <%= f.label :description, "Describe the group:" %>
-      <%= f.text_area :description, class: "textfield" %>
+      <%= f.label :description, "Describe the group:", class: "title" %>
+      <%= f.text_field :description, class: "textinput" %>
 
-      <%= f.label :tags, "What do you love?" %>
-      <%= f.text_area :tags, class: "textfield" %>
+      <%= f.label :tags, "Tags", class: "title" %>
+      <%= f.text_field :tags, class: "textinput" %>
 
-      <%= f.label :website, "You can be found online at:" %>
+      <%= f.label :website, "Website", class: "title" %>
       <%= f.text_field :website, class: "textinput" %>
 
-      <%= f.label :email %>
+      <%= f.label :email, "Email", class: "title" %>
       <%= f.text_field :email, class: "textinput" %>
 
-      <%= f.label :phone %>
-      <%= f.text_field :phone, class: "textinput" %>
-
-      <%= f.label :password %>
+      <%= f.label :password, "Password", class: "title" %>
       <%= f.password_field :password, class: "textinput" %>
 
-      <%= f.label :password_confirmation, "Confirm Password" %>
+      <%= f.label :password_confirmation, "Confirm Password", class: "title" %>
       <%= f.password_field :password_confirmation, class: "textinput" %>
 
-
       <%= f.submit "Save changes", class: "btn" %>
+    </div>
 </span> 
 </div>
     <% end %>
