@@ -25,3 +25,9 @@ Add new column to attributes in appropriate Model:
   attr_accessible :name, :email, :password, :password_confirmation, :description, :phone
 
 if it throws an error, did you remember to run rake db:migrate?
+
+
+To start search:
+
+rake sunspot:solr:start
+rake sunspot:reindex
