@@ -46,20 +46,16 @@
                       <button class="btn">You're on this eventstream
                         <br>
                       </button>
-                    </h3>
-                    <p>our details 327 Grant Avenue San Francisco, CA United States 94108 our hours 415-402-0914
-                      grantavenue-store@lululemon.com Monday - Saturday: 9am - 8pm Sunday: 9am - 7pm location
-                      map Click here to view map</p>
                   </div>
                 </span>
                 <span class="span6">
-                  <h1 class="heading heading-1">Run Club on Thursday, Dec. 12 at 6:30pm</h1>
-                  <p>Run Club Thursday December 13th, 2012 327 Grant Avenue We've got a wide range of
-                    runners that meet on Thursday nights at 6:30pm at lululemon athletica Grant Avenue
-                    . Each week we'll run different routes (3 mile, 4.5 mile, and a 6 mile option) around
-                    the city followed by a run club social at the Irish Bank for some drinks and more
-                    fun! If you're new to running, training for a race, or just looking for a fun group
-                    of people to run with, come on out and join in on all the fun!</p>
+
+                  <p>      
+                    <% if @user.microposts.any? %>
+        <%= render @microposts %>
+        <%= will_paginate @microposts %>
+      <% end %>
+    </p>
                 </span>
               </div>
               <div class="row-fluid">
