@@ -7,7 +7,7 @@ html {
 }
 body {
   margin: 0px 0px;
-  padding: 60px 0 0 0;
+  padding: 0px;
   background: transparent;
 }
 
@@ -41,17 +41,29 @@ body {
   }  
 }
 
+/* body */
+
+h1 {
+  margin: 20px 0;
+}
+.container-fluid {
+  padding: 10px 30px 10px 30px;  
+  margin: 60px 0px;
+}
+
 .feed-item{
-  padding: 60px 60px;
+  padding: 20px 20px;
   margin: 0px;
   background: #F9F9F9;
 
   .today {
     background: #000;
   }
-
-  .table {
-    margin: 0px;
+  .title {
+  margin: 10px 0;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.2em;
   }
 }
 
@@ -63,18 +75,15 @@ body {
   left: 1054px;
 }
 .textinput {
-  margin: 10px 0 20px 250px;
-  width: 600px;
+  padding: 4px 130px 4px 5px;
+  margin: 0 0 20px;
   height: 20px;
 }
 
 .textfield {
-  margin: 10px 0 20px 250px;
-  width: 600px;
+  padding: 4px 130px 4px 5px;
+  margin: 0 0 20px;
   height: 100px;
 }
 
-.title {
-  font-size: 3em;
-  line-height: 1.2em;
-}
+
