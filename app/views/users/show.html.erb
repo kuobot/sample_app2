@@ -3,8 +3,14 @@
 <div class="container-fluid">
   <div class="row-fluid">
     <span class="span3">
-      <div class="well title">
+      <div class="well">
+        <div class="title">
         <%= @user.name %>
+        </div>
+        <%= render 'follow_form' if signed_in? %>
+        <p>
+        <%= @user.description %>
+        </p>
       </div>
     </span>
     <span class="span9">

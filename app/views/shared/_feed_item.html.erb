@@ -1,18 +1,15 @@
-<div class="row-fluid">
-  <span class="span12">
-    <div id="<%= feed_item.id %>" class="span12 feed-item <%= feed_item.is_today ? 'today' : '' %>">
+  <div class="row-fluid">
 
+    <div id="<%= feed_item.id %>" class="span12 feed-item <%= feed_item.is_today ? 'today' : '' %>">
       <div class="title">
         <%= feed_item.title %>
       </div>
-      <p>
+      <p><%= link_to feed_item.user.name, feed_item.user %><br><br>
         <%= feed_item.content %>
       </p>
-
     </div>
   </span>
 </div>
-
 
 <!--        <span class="timestamp">  
       Asked <%= time_ago_in_words(feed_item.created_at) %> ago:  </span><br>
