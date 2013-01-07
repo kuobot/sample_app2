@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+now = DateTime.now
+
+User.create(:name => 'Jimbo Robbins', :email => 'jimbo@robbins.com')
