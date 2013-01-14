@@ -15,4 +15,4 @@
 /tmp
 
 solr/data/
-solr/pid/
+solr/pids/
