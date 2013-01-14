@@ -8,4 +8,4 @@
 
 now = DateTime.now
 
-User.create(:name => 'Jimbo Robbins', :email => 'jimbo@robbins.com')
+User.create(:name => 'Jimbo Robbins', :email => 'jimbo@robbins.com', :password => 'kitten')
