@@ -110,7 +110,7 @@ GEM
     mime-types (1.19)
     multi_json (1.5.0)
     nokogiri (1.5.6)
-    pg (0.12.2)
+    pg (0.14.1)
     polyglot (0.3.3)
     pr_geohash (1.0.0)
     pry (0.9.10)
@@ -227,7 +227,7 @@ DEPENDENCIES
   jquery-mobile-rails
   jquery-rails
   mailcatcher
-  pg (= 0.12.2)
+  pg
   rails (= 3.2.10)
   rb-fsevent
   rspec-rails (= 2.10.0)

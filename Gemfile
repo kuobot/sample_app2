@@ -8,6 +8,7 @@ gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem "jquery-mobile-rails"
 gem 'thin'
+gem 'pg'
 
 
 group :development, :test do
@@ -41,8 +42,4 @@ group :test do
   gem 'growl', '1.0.3'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
-end
-
-group :production do
-  gem 'pg', '0.12.2'
 end

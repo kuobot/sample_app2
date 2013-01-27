@@ -11,18 +11,23 @@
         <p>
         <%= @user.description %>
         </p>
+        <%= link_to @user.website, @user.website %><br>
+         <%= mail_to @user.email, "Help" + " " + @user.name + " " + "out!", :subject => "Message from your tethrball from" + ' ' + @user.name %>
+
       </div>
     </span>
     <span class="span9">
-            <div class="well">
-      <p>      
+      <div class="well">
         <% if @user.microposts.any? %>
           <%= render @microposts %>
           <%= will_paginate @microposts %>
-      </p>
+        <% else %>
+          <div class="empty">
+          You have no asks for help yet. Create one now!
+          </div>
+      </div>
     </span>
   </div>
-  </div>    
 </div>
 <% end %>
       

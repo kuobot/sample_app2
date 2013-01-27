@@ -68,7 +68,7 @@ h1 {
 
 .btn {
   font-size: 17.77777862548828px;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .textfield {
@@ -85,6 +85,7 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   line-height: 1.2em;
+
   }
 
 input.textinput {
@@ -93,4 +94,13 @@ input.textinput {
   width: 255px;
   font-size: 15.555556297302246px;
   border-radius: 5.981481552124023px;
+}
+
+/* body */
+
+.empty {
+  padding: 100px 20px;
+  font-size: 20px;
+  color: #BBB;
+  line-height: 1.2em;
 }

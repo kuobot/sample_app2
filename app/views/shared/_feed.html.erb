@@ -3,4 +3,16 @@
   <%= render partial: 'shared/feed_item', collection: @feed_items %>
   <%= will_paginate @feed_items %>
   
+ <% else %> 
+
+ <div class="empty">
+ 	<div class="title">
+ 	Oh no!
+ </div>
+
+ 	You have no help requests yet. <br><br>
+ 	<%= link_to "Find the people", users_path %> you want to help and start following them now!
+ </div>
 <% end %>
+
+

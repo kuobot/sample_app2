@@ -8,8 +8,9 @@
 	<div class="well">
 		<center>
 		<div class="title">
-    		Find a group's eventfeed:
-    	</div>
+    		Help your friends! </div>
+        Find them using their email and see what they need:
+      
   		<%= form_tag users_path, :method => :get do %>
   	    <%= text_field_tag :search, params[:search], class: "textinput" %>
      <%= submit_tag "Search", :name => nil, class: "btn" %>
