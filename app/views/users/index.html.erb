@@ -9,6 +9,7 @@
 		<center>
 		<div class="title">
     		Help your friends! </div>
+
         Find them using their email and see what they need:
       
   		<%= form_tag users_path, :method => :get do %>
@@ -16,6 +17,7 @@
      <%= submit_tag "Search", :name => nil, class: "btn" %>
   
 	</center>
+
   	<%= render @users %> 
   </div>
 </div>

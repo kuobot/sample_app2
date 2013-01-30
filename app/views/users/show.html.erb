@@ -7,13 +7,13 @@
         <div class="title">
         <%= @user.name %>
         </div>
+               <i><%= link_to @user.website, "http://" + @user.website %><br><br>
+ 
         <%= render 'follow_form' if signed_in? %>
         <p>
         <%= @user.description %>
-        </p>
-        <%= link_to @user.website, @user.website %><br>
-         <%= mail_to @user.email, "Help" + " " + @user.name + " " + "out!", :subject => "Message from your tethrball from" + ' ' + @user.name %>
-
+        </p></i>
+ 
       </div>
     </span>
     <span class="span9">

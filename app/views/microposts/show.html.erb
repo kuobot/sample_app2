@@ -1,5 +1,6 @@
 <% provide(:title, @micropost.title) %>
 
+
 <div class="container-fluid">
   <div class="row-fluid">
     <span class="span12">
@@ -16,10 +17,11 @@
 
     <% if current_user?(@micropost.user) %>
 
-  <div class="btn">Go back to your list!</div>
+  <div class="btn">Go back to your wallboard!</div>
  <% else %>
 
-  <div class="btn">Help this person level up.</div>
+
+<div class="btn">Help <%= @micropost.user.name %> level up.</div>
 <% end %>
       </div>
     </span>
