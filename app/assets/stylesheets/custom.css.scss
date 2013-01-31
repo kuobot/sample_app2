@@ -6,7 +6,7 @@ html {
   background-position: top left;
 a:link {color:#CCC;}      /* unvisited link */
 a:visited {color:#464646;}  /* visited link */
-a:hover {color:#CCC;
+a:hover {color:#000;
 text-decoration: none;}  /* mouse over link */
 a:active {color:#000;}  /* selected link */
 }
@@ -113,7 +113,7 @@ input[type="text"], textarea {
 }
 
 .huge_ass_text {
-  padding: 100px 0px;
+  padding: 50px 0px 20px 0;
   font-size: 70px;
   font-weight: bold;
 }
