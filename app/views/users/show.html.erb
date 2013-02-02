@@ -7,12 +7,10 @@
         <div class="title">
         <%= @user.name %>
         </div>
-               <i><%= link_to @user.website, "http://" + @user.website %><br><br>
- 
         <%= render 'follow_form' if signed_in? %>
         <p>
         <%= @user.description %>
-        </p></i>
+        </p>
  
       </div>
     </span>
@@ -23,7 +21,7 @@
           <%= will_paginate @microposts %>
         <% else %>
           <div class="empty">
-          You have no asks for help yet. Create one now!
+          You have no asks for help yet. <%= link_to 'Create one now', help_path %>
           </div>
       </div>
     </span>
