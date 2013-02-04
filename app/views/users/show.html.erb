@@ -11,7 +11,7 @@
         <p>
         <%= @user.description %>
         </p>
- 
+    <%= render 'shared/stats' %> 
       </div>
     </span>
     <span class="span9">
@@ -21,8 +21,13 @@
           <%= will_paginate @microposts %>
         <% else %>
           <div class="empty">
+
+        <% if current_user?(@user) %>
           You have no asks for help yet. <%= link_to 'Create one now', help_path %>
+        <% else %>
+          It's hard to believe this person doesn't need anything! To score bonus points, surprise them by contacting them out of the blue. Now, that's a novel concept these days, right?
           </div>
+        <% end %>
       </div>
     </span>
   </div>

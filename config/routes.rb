@@ -5,7 +5,7 @@ SampleApp::Application.routes.draw do
     end
   end
   resources :sessions,      only: [:new, :create, :destroy]
-  resources :microposts,    only: [:create, :destroy, :edit, :update, :show]
+  resources :microposts do [:create, :destroy, :edit, :update, :show] end
   resources :relationships, only: [:create, :destroy]
 
 

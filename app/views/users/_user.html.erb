@@ -1,7 +1,20 @@
 
-<!--   <%= gravatar_for user, size: 52 %>
- -->  <%= link_to user.name, user %>
+
+	<div class="row-fluid">
+		    <span class="span12">
+  <div class="well">
+
+<span class="span1">
+   <%= gravatar_for user, size: 52 %>
+</span>
+  <%= link_to user.name, user, class: "title" %><br>
+
+	<%= link_to user.website %>
+
   <% if current_user.admin? && !current_user?(user) %>
-    | <%= link_to "delete", user, method: :delete,
+     <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
   <% end %>
+</span>
+</div>
+</div>

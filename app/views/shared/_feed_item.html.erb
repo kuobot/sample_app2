@@ -2,7 +2,7 @@
     <div id="<%= feed_item.id %>" class="feed-item <%= feed_item.is_today ? 'today' : '' %>">    </div>
 
       <div class="title">
-        <%= link_to feed_item.title, @micropost %>
+        <%= link_to feed_item.title, feed_item.user %>
 
       </div> <i>Posted by
 <%= link_to feed_item.user.email, feed_item.user %></i>

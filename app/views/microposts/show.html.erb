@@ -8,6 +8,7 @@
         <div class="title">
         <%= @micropost.title %>
                 </div>
+             Posted by <%= link_to @micropost.user.name %><hr>
         <%= @micropost.content %>
 
 <br>
