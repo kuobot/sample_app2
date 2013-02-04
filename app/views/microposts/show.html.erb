@@ -8,7 +8,7 @@
         <div class="title">
         <%= @micropost.title %>
                 </div>
-             Posted by <%= link_to @micropost.user.name %><hr>
+             Posted by <%= link_to @micropost.user.name, user_path(@micropost.user.id) %><hr>
         <%= @micropost.content %>
 
 <br>
@@ -18,11 +18,10 @@
 
     <% if current_user?(@micropost.user) %>
 
-  <div class="btn">Go back to your wallboard!</div>
+
  <% else %>
 
 
-<div class="btn">Help <%= @micropost.user.name %> level up.</div>
 <% end %>
       </div>
     </span>
