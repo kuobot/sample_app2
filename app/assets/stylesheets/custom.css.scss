@@ -1,9 +1,11 @@
 html {
   margin: 0px;
   padding: 0px;
+  background-color: #000000;
   background-image: url(background.png);
   background-repeat: repeat;
   background-position: top left;
+  background-opacity: .8;
 a:link {color:#BBB;}      /* unvisited link */
 a:visited {color:#464646;}  /* visited link */
 a:hover {color:#000;
@@ -32,6 +34,7 @@ body {
 
 .navbar .navbar-inner {
   height: 42px;
+
 }
 
 #logo {
