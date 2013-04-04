@@ -9,7 +9,6 @@
 </span>
   <%= link_to user.name, user, class: "title" %><br>
 
-	<%= link_to user.website %>
 
   <% if current_user.admin? && !current_user?(user) %>
      <%= link_to "delete", user, method: :delete,

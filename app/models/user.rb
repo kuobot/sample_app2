@@ -20,10 +20,10 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
 
-  searchable do
-    text :email, :name, :description, :tags
-    string :tags
-  end
+  # searchable do
+  #   text :email, :name, :description, :tags
+  #   string :tags
+  # end
 
 
 

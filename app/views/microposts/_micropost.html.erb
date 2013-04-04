@@ -7,11 +7,15 @@
 
 <% end %>
 
-  	<div class="title">
+<br>
+<div class="title">
       <%= link_to micropost.title, micropost_path(micropost.id) %>
    	</div>
-      <%= micropost.content %> <br>
-     <%= mail_to micropost.user.email, "Reply", :subject => "Message from your tethrball from" + ' ' + current_user.name, :body => "This message sent to you via tethrball. Check out " + current_user.name + "'s " + "profile here.", class: "label" %>
+
+      <p><%= micropost.content %></p> <br>
+          <%= link_to "View event", micropost_path(micropost.id), class: "btn btn-success" %>
+
+    <!--  <%= mail_to micropost.user.email, "View this event", :subject => "Message from your tethrball from" + ' ' + current_user.name, :body => "This message sent to you via tethrball. Check out " + current_user.name + "'s " + "profile here.", class: "label" %> -->
 <hr>
 
 <!--   <span class="timestamp">

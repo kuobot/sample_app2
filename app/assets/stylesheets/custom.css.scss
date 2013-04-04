@@ -1,14 +1,13 @@
 html {
   margin: 0px;
   padding: 0px;
-  background-color: #2f4b5e;
+  background-color: #FFF;
 /*  background-image: url(background.png); */
   background-repeat: repeat;
   background-position: top left;
-a:link {color:#BBB;}      /* unvisited link */
+a:link {color:#414141;}      /* unvisited link */
 a:visited {color:#464646;}  /* visited link */
-a:hover {color:#000;
-text-decoration: none;}  /* mouse over link */
+a:hover {color:#000; text-decoration: none;}  /* mouse over link */
 a:active {color:#000;}  /* selected link */
 }
 
@@ -25,6 +24,7 @@ body {
 }
 
 
+
 /* header */
 
 .navbar {
@@ -39,7 +39,7 @@ body {
 #logo {
   float:left;
   margin-left: 10px;
-  font-size: 1.2em;
+  font-size: 30px;
   color: #CCC;
   font-weight: bold;
   padding-top: 2px;
@@ -52,8 +52,10 @@ body {
 /* body */
 
 h1 {
-  margin: 20px 30px;
+  margin: 30px 0;
+  font-size: 50px;
 }
+
 
 .container-fluid {
   padding: 10px 0 5px 0;  
@@ -83,17 +85,21 @@ h1 {
 
 
   .title {
-  margin: 0 0 0px 0;
-  font-size: 1em;
+  margin: 0 0px 10px 0;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.2em;
+  }
 
+  p {
+  font-size: 16px;
+  line-height: 1.2em;
   }
 
 input.textinput {
   margin: 0px 0;  padding: 10px 10px;
   width: 340px;
-  font-size: 15.555556297302246px;
+  font-size: 16px;
   border-radius: 5.981481552124023px;
 }
 
@@ -101,7 +107,7 @@ input.textinput {
 input[type="text"], textarea { 
     padding: 10px;
     margin: 0 0 10px;
-    font-size: 15.555556297302246px;
+    font-size: 16px;
     width:340px; 
 }
 
@@ -121,9 +127,9 @@ input[type="text"], textarea {
 }
 
  .label {
-   background: #464646;
+   background: #AAA;
    height: 12px;
    margin: 5px 0px;
    padding: 10px 15px;
-   font-size: 14px;
+   font-size: 16px;
  }

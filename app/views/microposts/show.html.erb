@@ -10,7 +10,8 @@
                 </div>
              Posted by <%= link_to @micropost.user.name, user_path(@micropost.user.id) %><hr>
         <%= @micropost.content %>
-
+        <br><br>
+        <div class="btn btn-success">Buy ticket</div>
 <br>
 <br>
     
@@ -23,7 +24,17 @@
 
 
 <% end %>
+
+ <a href="<%= followers_user_path(@micropost.user) %>">
+    <strong id="followers" class="stat">
+      has <%= @micropost.user.followers.count %> cards
+    </strong>
+   </a>
+  
+
+
       </div>
     </span>
   </div>
 </div>
+

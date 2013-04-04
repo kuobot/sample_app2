@@ -1,14 +1,22 @@
 <div class="container-fluid">   
   <div class="row-fluid">
-  <div class="well">
+
+<h1>Disclaimer and Terms of Use</h1>
+
+<p>By submitting your photo you agree to the following terms of use. If selected to appear on our Model Human Facebook page, you will be compensated one whole dollar by Model Human, LLC. Photo must meet the following minimum qualifications to be considered for entry into our Model Human database. Must be at least 500px wide by 300px height and not contain profanity or excessive nudity. If chosen, Model Human automatically reserves the right to post the photo immediately to the Model Human Facebook page and to use on any other media platform it identifies as materially appropriate for usage. If photo is selected for the latter, additional compensation may be delivered to the original photo provider. Exclusive rights on selected photos and videos belong to Model Human, LLC once selected for entry into our database and may only be used for commercial purposes by Model Human, LLC and no other entity.</p>
+
+      	<h2>Submit photo</h2><br><%= mail_to "submission@modelhuman.com", "Send photo", class: "btn" %></center>
+
+
+<!--   <div class="well">
     <% if signed_in? %>
       <%= render 'shared/feed' %>
     <% else %>
 
-      <center><div class="huge_ass_text">Wallboard.</div><br>
+      <center><div class="huge_ass_text"></div><br>
       	<%= image_tag("pink_pushpin.png", :alt => "toilet") %>
-      	<h2>What do you need today? </h2><br><br><%= link_to "Start your wallboard", signup_path, class: "btn" %></center>
-  </div>
+      	<h2>Sign up to host or attend a party</h2><br><br><%= link_to "Sign up", signup_path, class: "btn" %></center>
+  </div> -->
 </div>
 </div>
 
