@@ -8,6 +8,8 @@ gem "jquery-mobile-rails"
 gem 'thin'
 gem 'pg'
 
+gem "carrierwave"
+
 
 group :development, :test do
   # gem 'faker', '1.0.1'
