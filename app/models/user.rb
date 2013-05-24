@@ -24,6 +24,7 @@ class User < ActiveRecord::Base
   #   text :email, :name, :description, :tags
   #   string :tags
   # end
+  mount_uploader :image, ImageUploader
 
 
   before_save { |user| user.email = email.downcase }
