@@ -11,6 +11,10 @@
       <%= f.label :name, "Name:", class: "title" %>
       <%= f.text_field :name, class: "textinput" %>
 
+  <p>
+    <%= f.file_field :image %>
+  </p>
+  
       <%= f.label :description, "Describe yourself:", class: "title" %>
       <%= f.text_area :description, class: "textinput", :size =>"50x5" %>
 
