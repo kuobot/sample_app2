@@ -1,18 +1,21 @@
 <% provide(:title, @user.name) %>
 
-  <div class="container-fluid">
-  <div class="row-fluid">
-    <span class="span12">
- 
+<div class="image">
         <center><%= image_tag @user.image_url.to_s %></center>
 
-        <div class="title">
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+<!--     <span class="span12">
+ --> 
+     <div class="title">
 <br>
         <%= @user.name %>
 
         <%= render 'follow_form' if signed_in? %>
         <p>
-        </div>
+     </div>
 
 
 
@@ -25,18 +28,22 @@
 
 <p><p><hr>
 <p><p>
+
+
         <% if @user.microposts.any? %>
-          <%= render @microposts %>
-          <%= will_paginate @microposts %>
+
+           <%= render @user.microposts %>
+
+         <%= will_paginate @microposts %>
         <% else %>
 
-        <!--   <div class="empty">
+          <div class="empty">
         <% if current_user?(@user) %>
-          <center>You don't have any help <br><br><%= link_to 'Upload one now', help_path, class: "btn btn-success" %></center>
+          <center>You don't have any  <br><br><%= link_to 'Upload one now', help_path, class: "btn btn-success" %></center>
         <% else %>
 
         <% end %>
-         -->
+          </div>
     </span>
   </div>
 </div>

@@ -3,12 +3,12 @@
 
 <div class="container-fluid">
   <div class="row-fluid">
-    <span class="span12">
-        <div class="title">
+    <span class="span12"> 
+        <div class="content-title">
         <%= @micropost.title %>
                 </div>
              Posted by <%= link_to @micropost.user.name, user_path(@micropost.user.id) %><hr>
-        <%= @micropost.content %>
+        <%=simple_format h @micropost.content %>
         <br><br>
 <!--         <div class="btn btn-success">Buy ticket</div>
  --><br>
@@ -24,11 +24,11 @@
 
 <% end %>
 
- <a href="<%= followers_user_path(@micropost.user) %>">
+<!--  <a href="<%= followers_user_path(@micropost.user) %>">
     <strong id="followers" class="stat">
       has <%= @micropost.user.followers.count %> followers
     </strong>
-   </a>
+   </a> -->
   
     </span>
   </div>

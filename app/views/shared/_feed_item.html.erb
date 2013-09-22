@@ -1,7 +1,7 @@
 
     <div id="<%= feed_item.id %>" class="feed-item <%= feed_item.is_today ? 'today' : '' %>">    </div>
 
-      <div class="title">
+      <div class="content-title">
         <%= link_to feed_item.title, micropost_path(feed_item.id) %>
 
       </div> <i>Posted by

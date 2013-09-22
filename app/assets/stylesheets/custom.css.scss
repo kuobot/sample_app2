@@ -33,12 +33,12 @@ body {
 
 .navbar .navbar-inner {
   height: 42px;
+  padding: 0px 20px;
 
 }
 
 #logo {
-  float:left;
-  margin-left: 10px;
+  margin-left: 100px;
   font-size: 30px;
   color: #CCC;
   font-weight: bold;
@@ -58,8 +58,8 @@ h1 {
 
 
 .container-fluid {
-  padding: 10px 0 5px 0;  
-  margin: 60px 0px;
+  padding: 0;  
+  margin: 40px 10px;
 
 .row-fluid {
   margin: 0 0 0px 0;
@@ -89,9 +89,15 @@ h1 {
 
 
   .title {
-  margin: 0 0px 10px 0;
+  margin: 0 0px 0px 0;
   font-size: 36px;
   font-weight: bold;
+  line-height: 1.2em;
+  }
+
+ .content-title {
+  margin: 0 0px;
+  font-size: 24px;
   line-height: 1.2em;
   }
 
@@ -140,4 +146,8 @@ input[type="text"], textarea {
 
  /* image */
 
- 
+ .image {
+     position: relative;
+    width: 100%;
+    overflow: hidden;
+ }

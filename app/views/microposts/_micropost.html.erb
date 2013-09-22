@@ -8,16 +8,15 @@
 <% end %>
 
 <br>
-<div class="title">
+<div class="content-title">
       <%= link_to micropost.title, micropost_path(micropost.id) %>
    	</div>
 
-      <p><%= micropost.content %></p> <br>
-
+<!--       <p><%= micropost.content %></p> <br>
+ -->
     <!--  <%= mail_to micropost.user.email, "View this event", :subject => "Message from your tethrball from" + ' ' + current_user.name, :body => "This message sent to you via tethrball. Check out " + current_user.name + "'s " + "profile here.", class: "label" %> -->
 <hr>
 
 <!--   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
   </span> -->
-
