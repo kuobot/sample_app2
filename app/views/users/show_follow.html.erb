@@ -3,9 +3,13 @@
    <aside class="span12">
     
 <!--       <%= link_to gravatar_for @user, @user %>
- -->      
+ -->
+
+
  <br><br><br>
  <h1><%= @user.name %></h1> 
+ See what brands Joann is following!
+
 <!--       <span><%= link_to "view my profile", @user %></span>
       <span><b>Microposts:</b> <%= @user.microposts.count %></span> -->
 <!--       <%= render 'shared/stats' %>
@@ -23,7 +27,13 @@
 
 <!--   <div class="span8">
     <h3><%= @title %></h3>
- -->    <% if @users.any? %>
+ --> 
+
+
+ <br><br><br>
+ 
+
+    <% if @users.any? %>
       <class="users">
         <%= render @users %>
       

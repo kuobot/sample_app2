@@ -2,12 +2,12 @@
 
   <a href="<%= following_user_path(@user) %>"> 
      <strong id="following" class="stat">
-       Following <%= @user.followed_users.count %> people
+       &#9825; <%= @user.followed_users.count %> brands
    </strong>  
-  </a> 
+  </a> <br>
     <a href="<%= followers_user_path(@user) %>">
     <strong id="followers" class="stat">
-      has <%= @user.followers.count %> cards
+      Has <%= @user.followers.count %> &#9825;'ers
     </strong>
    </a>
 

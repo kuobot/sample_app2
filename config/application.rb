@@ -67,7 +67,7 @@ module SampleApp
     config.assets.version = '1.0'
 
     # CarrierWave issue https://github.com/carrierwaveuploader/carrierwave/issues/399
-    config.autoload_paths += "#{Rails.root}/app/uploaders"
+
 
   end
 end
