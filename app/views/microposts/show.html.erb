@@ -5,15 +5,17 @@
   <div class="row-fluid">
     <span class="span12"> 
         <div class="content-title">
+<br>
         <%= @micropost.title %>
                 </div>
              Posted by <%= link_to @micropost.user.name, user_path(@micropost.user.id) %><hr>
         <%=simple_format h @micropost.content %>
         <br><br>
 <!--         <div class="btn btn-success">Buy ticket</div>
- --><br>
+ -->
+
 <br>
-    
+<br>    
 <br>
 
     <% if current_user?(@micropost.user) %>

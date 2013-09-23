@@ -1,29 +1,31 @@
 <% provide(:title, @title) %>
-<div class="row">
+
+ <div class="container-fluid">
    <aside class="span12">
     
 <!--       <%= link_to gravatar_for @user, @user %>
  -->
 
-
  <br><br><br>
- <h1><%= @user.name %></h1> 
- See what brands Joann is following!
+ <div class="title"><%= @user.name %></div>
+ See what Joann has collected.
 
+<br>
+<br>
 <!--       <span><%= link_to "view my profile", @user %></span>
       <span><b>Microposts:</b> <%= @user.microposts.count %></span> -->
 <!--       <%= render 'shared/stats' %>
  --> 
-
-  <!--      <% if @users.any? %>
+<!--      <% if @users.any? %>
         <div class="user_avatars">
           <% @users.each do |user| %>
             <%= link_to gravatar_for(user, size: 30), user %>
+
           <% end %>
         </div>
-      <% end %>
+ -->      <% end %>
   
-  </aside> -->  
+  </aside> 
 
 <!--   <div class="span8">
     <h3><%= @title %></h3>
@@ -31,12 +33,22 @@
 
 
  <br><br><br>
- 
+   
+      <div class="row-fluid">
 
-    <% if @users.any? %>
-      <class="users">
-        <%= render @users %>
-      
-      <%= will_paginate %>
-    <% end %>
+        <% @users.in_groups_of(3, false) do |users| %>
+       <div class="span4">
+        <% users.each do |users| %><center><%= link_to image_tag @user.image_url.to_s %></center>
+        <%= render users %>
+
+
+        <% end %>
+       </div>
+
+      <% end %>
+      </div>
+
+    </div>
+
+  </div>
 </div>

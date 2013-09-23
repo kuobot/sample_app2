@@ -1,11 +1,22 @@
+<style>
+    input {
+        max-width: 100%;
+    } 
+</style>
 
+<div class="container-fluid">
+  <div class="row-fluid">
+	<div class="span12">
 
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
-
      <%= f.text_field :title, placeholder: "Title", class: "textinput" %>
- <br><%= f.text_area :content, placeholder: "  ", class: "textfield", :size =>"50x5" %><br>
+ <br><%= f.text_area :content, placeholder: "Write your essay here!", class: "textinput" %><br>
 <%= f.submit "       Post       ", class: "btn" %>
 <% end %>
+
+</div>
+</div>
+</div>
 </div>

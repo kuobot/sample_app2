@@ -4,10 +4,10 @@
      <strong id="following" class="stat">
        &#9825; <%= @user.followed_users.count %> brands
    </strong>  
-  </a> <br>
+  </a> 
     <a href="<%= followers_user_path(@user) %>">
     <strong id="followers" class="stat">
-      Has been &#9825; <%= @user.followers.count %> times
+      Has <%= @user.followers.count %> &#9825;
     </strong>
    </a>
 

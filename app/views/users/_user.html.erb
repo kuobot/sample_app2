@@ -1,16 +1,14 @@
 
 
-	<div class="row-fluid">
-		    <span class="span12">
+<div class="row-fluid">
+    <span class="span12">
   <div class="well">
-
-<span class="span1">
-
+	<span class="span1">
 
 <!--    <%= gravatar_for user, size: 52 %>
  --></span>
-  <%= link_to user.name, user, class: "title" %><br>
-
+  <%= link_to user.name, user, class: "content-title" %>  <br>  
+<br>
 
   <% if current_user.admin? && !current_user?(user) %>
      <%= link_to "delete", user, method: :delete,

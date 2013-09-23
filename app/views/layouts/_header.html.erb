@@ -1,11 +1,15 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="brand">
-      <%= link_to "tethrball", root_path, id: "logo" + "   " %>
+      <%= link_to "tethrball", root_path, class: "logo" + "   " %>
    <!--      <%= image_tag("", :alt => "toilet", :size => "24x24") %> --></div>
       <nav>
 
+      <%= text_field :user_id, placeholder: "user ID", class: "textinput-small" %>
+  <%= link_to "Find a brand using ID", users_path + "d", class: "btn" %>
+
         <ul class="nav pull-right">
+
 
           <% if signed_in? %>
 

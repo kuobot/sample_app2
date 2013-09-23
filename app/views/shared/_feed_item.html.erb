@@ -1,9 +1,11 @@
 
+    
     <div id="<%= feed_item.id %>" class="feed-item <%= feed_item.is_today ? 'today' : '' %>">    </div>
+   <div class="span12">
 
       <div class="content-title">
-        <%= link_to feed_item.title, micropost_path(feed_item.id) %>
-
+<!--                 <%= image_tag("pink_pushpin.png", :size => "50x50", :alt => "rss feed") %>
+ -->        <%= link_to feed_item.title, micropost_path(feed_item.id) %>
       </div> <i>Posted by
 <%= link_to feed_item.user.name, feed_item.user %></i>
 
@@ -31,3 +33,4 @@
                                    title: feed_item.content %>
 <% end %> -->
 
+</div>
